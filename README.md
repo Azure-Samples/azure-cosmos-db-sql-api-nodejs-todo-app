@@ -1,57 +1,57 @@
-# Project Name
+---
+services: cosmos-db
+platforms: nodejs
+author: christopheranderson
+---
 
-(short, 1-3 sentenced, description of the project)
+# Web application development with Node.js and Express using Azure Cosmos DB
+This sample shows you how to use the Azure Cosmos DB service to store and access data from a Node.js Express application hosted on Azure Websites. 
 
-## Features
+![My ToDo List Node.js application](./media/image1.png)
 
-This project framework provides the following features:
+For a complete end-to-end walk-through of creating this application, please refer to the [full tutorial on the Azure documentation page](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application-preview)
 
-* Feature 1
-* Feature 2
-* ...
+## Running this sample
+1. Before you can run this sample, you must have the following perquisites:
+	- An active Azure Cosmos DB account - If you don't have an account, refer to the [Create an Azure Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application#_Toc395637761) article.
+	- [Node.js](https://nodejs.org/en/) version v0.10.29 or higher.
+	- [Express generator](http://expressjs.com/starter/generator.html) (you can install this via npm install express-generator -g)
+	- [Git](http://git-scm.com/).
 
-## Getting Started
+2. Clone this repository, or download the zip file.
 
-### Prerequisites
+3. Retrieve the URI and PRIMARY KEY (or SECONDARY KEY) values from the Keys blade of your Azure Cosmos DB account in the Azure portal. For more information on obtaining endpoint & keys for your Azure Cosmos DB account refer to [How to manage an Azure Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/manage-account).
 
-(ideally very short, if any)
+	If you don't have an account, see [Create an Azure Cosmos DB database account](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application#_Toc395637761) to set one up.
 
-- OS
-- Library version
-- ...
+4. In the **config.js** file, located in the **src** folder, find **config.host** and **config.authKey** and replace the placeholder values with the values obtained for your account.
 
-### Installation
+5. Install the dependencies by opening a terminal, navigating to the directory in which the sample was installed, and running **npm install**. 
 
-(ideally very short)
+6. In the terminal, run **npm start** to start your start your node application. 
 
-- npm install [package name]
-- mvn install
-- ...
+7. Launch a browser and navigate to **http://127.0.0.1:3000/**
+![My ToDo List Node.js application](./media/run-1.png)
 
-### Quickstart
-(Add steps to get up and running quickly)
+## Deploy this sample to Azure
 
-1. git clone [repository clone url]
-2. cd [respository name]
-3. ...
+1. If you haven't already, enable a git repository for your Azure Website. You can find instructions on how to do this [here](https://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control-git/#step4).
 
+2. Add your Azure Website as a git remote.
 
-## Demo
+		git remote add azure https://username@your-website.scm.azurewebsites.net:443/your-website.git
 
-A demo app is included to show how to use the project.
+3. Deploy by pushing to the remote.
 
-To run the demo, follow these steps:
+		git push azure master
 
-(Add steps to start up the demo)
+4. In a few seconds, git will finish publishing your web application and launch a browser where you can see your handy work running in Azure!
 
-1.
-2.
-3.
+## About the code
+The code included in this sample is intended to get you going with a simple Node.js Express application that connects to Azure Cosmos DB with Express. It demonstrates how to interact with Azure Cosmos DB by using the [@azure/cosmos](https://www.npmjs.com/package/@azure/cosmos) npm package. It is not intended to be a set of best practices on how to build scalable enterprise grade web applications. This is beyond the scope of this quick start sample.
 
-## Resources
+## More information
 
-(Any additional resources or related projects)
-
-- Link to supporting information
-- Link to similar sample
-- ...
+- [Azure Cosmos DB Documentation](https://docs.microsoft.com/azure/cosmos-db/)
+- [Azure Cosmos DB Node SDK](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application-preview)
+- [Azure Cosmos DB Node SDK Reference Documentation](https://docs.microsoft.com/en-us/javascript/api/%40azure/cosmos/?view=azure-node-latest)
