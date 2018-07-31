@@ -1,13 +1,7 @@
-## [project-title] Changelog
+## Azure Cosmos DB SQL API Node.js Todo App Changelog
 
-<a name="x.y.z"></a>
-# x.y.z (yyyy-mm-dd)
+<a name="0.0.1"></a>
+# 0.0.1 (2018-07-31)
 
 *Features*
-* ...
-
-*Bug Fixes*
-* ...
-
-*Breaking Changes*
-* ...
+ - Full todo app with the new @azure/cosmos JavaScript SDK
