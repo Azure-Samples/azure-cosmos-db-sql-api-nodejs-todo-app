@@ -9,7 +9,7 @@ This sample shows you how to use the Azure Cosmos DB service to store and access
 
 ![My ToDo List Node.js application](./media/image1.png)
 
-For a complete end-to-end walk-through of creating this application, please refer to the [full tutorial on the Azure documentation page](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application)
+For a complete end-to-end walk-through of creating this application, please refer to the [full tutorial on the Azure documentation page](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application-preview)
 
 ## Running this sample
 1. Before you can run this sample, you must have the following perquisites:
@@ -48,10 +48,10 @@ For a complete end-to-end walk-through of creating this application, please refe
 4. In a few seconds, git will finish publishing your web application and launch a browser where you can see your handy work running in Azure!
 
 ## About the code
-The code included in this sample is intended to get you going with a simple Node.js Express application that connects to Azure Cosmos DB with the express intent of demonstrating how to interact with Azure Cosmos DB using the [@azure/cosmoms npm package](https://www.npmjs.com/package/@azure/cosmos). It is not intended to be a set of best practices on how to build scalable enterprise grade web applications. This is beyond the scope of this quick start sample. 
+The code included in this sample is intended to get you going with a simple Node.js Express application that connects to Azure Cosmos DB with Express. It demonstrates how to interact with Azure Cosmos DB by using the [@azure/cosmos](https://www.npmjs.com/package/@azure/cosmos) npm package. It is not intended to be a set of best practices on how to build scalable enterprise grade web applications. This is beyond the scope of this quick start sample.
 
 ## More information
 
 - [Azure Cosmos DB Documentation](https://docs.microsoft.com/azure/cosmos-db/)
-- [Azure Cosmos DB Node SDK](https://docs.microsoft.com/azure/cosmos-db/sql-api-sdk-node)
+- [Azure Cosmos DB Node SDK](https://docs.microsoft.com/azure/cosmos-db/sql-api-nodejs-application-preview)
 - [Azure Cosmos DB Node SDK Reference Documentation](https://docs.microsoft.com/en-us/javascript/api/%40azure/cosmos/?view=azure-node-latest)

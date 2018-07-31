@@ -24,13 +24,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 //Todo App:
-const docDbClient = new CosmosClient({
+const cosmosClient = new CosmosClient({
   endpoint: config.host,
   auth: {
     masterKey: config.authKey
   }
 });
-const taskDao = new TaskDao(docDbClient, config.databaseId, config.collectionId);
+const taskDao = new TaskDao(cosmosClient, config.databaseId, config.containerId);
 const taskList = new TaskList(taskDao);
 taskDao
   .init(err => {
