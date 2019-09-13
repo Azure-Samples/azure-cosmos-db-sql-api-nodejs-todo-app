@@ -1,7 +1,12 @@
 ---
-services: cosmos-db
-platforms: nodejs
-author: christopheranderson
+page_type: sample
+languages:
+- javascript
+- html
+products:
+- azure
+description: "This sample shows you how to use the Azure Cosmos DB service to store and access data from a Node.js Express application hosted on Azure Websites."
+urlFragment: azure-cosmos-db-sql-api-nodejs-todo-app
 ---
 
 # Web application development with Node.js and Express using Azure Cosmos DB
