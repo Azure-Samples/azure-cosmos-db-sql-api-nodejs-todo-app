@@ -1,4 +1,4 @@
-const TaskDao = require("../models/TaskDao");
+const TaskDao = require("../models/taskDao");
 
 class TaskList {
   /**
